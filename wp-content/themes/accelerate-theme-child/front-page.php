@@ -25,4 +25,12 @@ get_header(); ?>
 	</div><!-- .container -->
 </section><!-- .home-page -->
 
+<section class="recent-posts">
+	<div class="site-content">
+		<div class="blog-post">
+				<h4>From the Blog </h4>
+		</div>
+	</div>
+</section>
+
 <?php get_footer(); ?>
