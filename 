@@ -1,0 +1,116 @@
+[33mcommit b56e94ebed122673fa8ac3fd58dbfd82182ae844[m
+Author: Nixst@r <oneikap@gmail.com>
+Date:   Thu Dec 15 20:56:18 2016 +1000
+
+    blog-added-to-homepage
+
+[33mcommit 20f5805be9046d714249f0680720a44528ae8875[m
+Author: Nixst@r <oneikap@gmail.com>
+Date:   Thu Dec 15 16:45:52 2016 +1000
+
+    child-front-page-and blog-section-added
+
+[33mcommit f9fdd7c9caa600a6f0ae366734a6dd4d155b0b40[m
+Author: Nixst@r <oneikap@gmail.com>
+Date:   Thu Dec 15 11:10:36 2016 +1000
+
+    homepage-colours-and-image-changed
+
+[33mcommit bce3bf66887d5dce03c71e7dfc526e59e7b61532[m
+Author: Nixst@r <oneikap@gmail.com>
+Date:   Thu Dec 15 10:31:41 2016 +1000
+
+    created child theme
+
+[33mcommit 591d01ff07bde83a644fbc9b3f22c2a763d25688[m
+Merge: f379b94 7e8be37
+Author: Caro Griffin <carotoe@gmail.com>
+Date:   Fri Jun 10 10:58:00 2016 -0500
+
+    Merge pull request #10 from skillcrush/cleanup
+    
+    A little Parent Theme Love
+
+[33mcommit 7e8be37a94330fa2f5a90f5f2bdfc6b5f9b8ed40[m
+Author: Ann Cascarano <a.cascarano@gmail.com>
+Date:   Wed Jun 8 20:44:10 2016 -0400
+
+    add dynamic content to index.php
+
+[33mcommit e89c59f5b9316101c4b3159a19239b56507bce3b[m
+Author: Ann Cascarano <a.cascarano@gmail.com>
+Date:   Wed Jun 8 20:43:30 2016 -0400
+
+    add comment functionality
+
+[33mcommit 413eb30df0888d7bb7820f5b8d7d10e68d04f2e1[m
+Author: Ann Cascarano <a.cascarano@gmail.com>
+Date:   Wed Jun 8 20:42:39 2016 -0400
+
+    remove unnecessary files, styling, typo fixes, general cleanup
+
+[33mcommit f379b948ff7f1d8ea1077979b607b3598cae031d[m
+Merge: d120d45 58e0348
+Author: Caro Griffin <carotoe@gmail.com>
+Date:   Sun Mar 13 12:32:57 2016 -0500
+
+    Merge pull request #6 from skillcrush/functions
+    
+    small cleanup in functions.php
+
+[33mcommit 58e0348ed35742e274b6103335bb0c25cf0d5d14[m
+Author: Ann Cascarano <a.cascarano@gmail.com>
+Date:   Fri Mar 11 20:28:36 2016 -0500
+
+    small cleanup in functions.php
+
+[33mcommit d120d45c487aab41d89b78505ae18fed1d0b5c99[m
+Merge: 5f3589f aee56db
+Author: Caro Griffin <carotoe@gmail.com>
+Date:   Fri Mar 11 12:39:19 2016 -0600
+
+    Merge pull request #5 from skillcrush/functions
+    
+    Theme configuration menu and widget area
+
+[33mcommit aee56db2b44e3eaaec077b50fcc7465791fba8c8[m
+Author: Ann Cascarano <a.cascarano@gmail.com>
+Date:   Fri Mar 4 12:30:38 2016 -0500
+
+    theme configuration menu and widget area
+    
+    hooked menu registration and registered widget area in functions.php
+    
+    Widget area displays on condition that at least one widget is in use, otherwise default sidebar content is displayed.
+    
+    Added .htaccess file to .gitignore.
+
+[33mcommit 5f3589fa80c75b9c4a6e2ccab699290938d99995[m
+Author: rmhpapst <rachel@skillcrush.com>
+Date:   Thu Sep 24 14:06:51 2015 -0500
+
+    adding comments
+
+[33mcommit a0e46cab7f93bfd88a1d337741e70719f7d518ad[m
+Author: rmhpapst <rachel@skillcrush.com>
+Date:   Thu Sep 24 14:04:29 2015 -0500
+
+    removed comment
+
+[33mcommit feb315a674ed14df5077fe008ee91fb75faba27f[m
+Author: addabjork <adda.birnir@gmail.com>
+Date:   Sun Nov 9 14:34:49 2014 -0600
+
+    configuring for wpengine
+
+[33mcommit d8ca58dafebf10137e0db3f8631fa94a9441b82e[m
+Author: addabjork <adda.birnir@gmail.com>
+Date:   Sun Nov 9 14:33:01 2014 -0600
+
+    configuring ignore
+
+[33mcommit 8c9b09b8621286babc7900f7d12d1a4e9b1a0944[m
+Author: addabjork <adda.birnir@gmail.com>
+Date:   Sun Nov 9 14:11:52 2014 -0600
+
+    initial commit
