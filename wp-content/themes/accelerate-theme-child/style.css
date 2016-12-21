@@ -20,10 +20,10 @@
     background: none repeat scroll 0 0 #45ac9d;
   }
 
-#masthead nav ul li {
- float: left;
- margin: 0 10px;
-}
+  #masthead nav ul li {
+   display: inline;
+   margin: 0 10px;
+ }
 
 .button {
   background: none repeat scroll 0 0 #45ac9d;
@@ -76,15 +76,20 @@ div.case-study-images img {
   width: 100%;
   height: auto;
 }
-h2 {
-
-}
 h5 {
-
+color: grey;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 15px 0;
 }
-h6{
-
+h6 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 15px 0;
 }
 p {
-
+  margin-top: 30px;
+}
+div.live-site-link {
+  font-weight: bold;
 }
