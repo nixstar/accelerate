@@ -14,6 +14,8 @@ get_header(); ?>
 		<div id="content" role="main">
 
       <?php while ( have_posts() ) : the_post();
+
+        $size = "full";
         $services = get_field('services');
         $client = get_field('client');
         $link = get_field('site_link');
@@ -34,15 +36,15 @@ get_header(); ?>
 
     <div class="case-study-images">
       <?php if($image_1) { ?>
-        <img src="<?php echo $image_1; ?>" />
+        <?php echo wp_get_attachment_image( $image_1, $size ); ?>
       <?php } ?>
 
       <?php if($image_2) { ?>
-        <img src="<?php echo $image_2; ?>" />
+        <?php echo wp_get_attachment_image( $image_2, $size ); ?>
       <?php } ?>
 
       <?php if($image_3) { ?>
-        <img src="<?php echo $image_3; ?>" />
+        <?php echo wp_get_attachment_image( $image_3, $size ); ?>
       <?php } ?>
     </div>
 
