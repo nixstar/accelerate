@@ -25,7 +25,7 @@ get_header(); ?>
 	</div><!-- .container -->
 </section><!-- .home-page -->
 
-<section class="featured work">
+<section class="featured-work">
 	<div class="site-content">
 
 			<h4>Featured Work</h4>
@@ -41,9 +41,9 @@ get_header(); ?>
 				<li class="individual-featured-work">
 					<figure>
 						<?php echo wp_get_attachment_image($image_1, $size); ?>
-						</figure>
+					</figure>
 
-					<h3><?php the_title(); ?><a href="<?php the_permalink(); ?>"></a></h3>
+					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				</li>
 				<?php endwhile; ?>
 			<?php wp_reset_query(); ?>
