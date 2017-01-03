@@ -110,3 +110,42 @@ p {
 div.live-site-link {
   font-weight: bold;
 }
+/* -------End Case Study Styles ----- */
+
+/* Contact Us Page And Ninja Contact Form */
+#contact-page{
+  width: 70%;
+  margin: auto;
+}
+
+/* Contact Form Send Button */
+#nf-field-4 {
+  float: right;
+  background-color: #45ac9d;
+  color: #fff;
+  width: 12.5em;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: .1em;
+  padding: 1.1em;
+}
+/* -------End Contact Page Styles ----- */
+
+/* Success Page Styles */
+#success-page {
+  width: 70%;
+  margin: auto;
+  padding-top: 25px;
+}
+
+#success-page h2 {
+  font-size: 28px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: #45ac9d;
+  text-align: center;
+}
+
+#success-page p {
+  text-align: center;
+}
