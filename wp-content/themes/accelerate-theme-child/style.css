@@ -73,6 +73,26 @@
 }
 /* -------End Homepage Styles ----- */
 
+/* About Page Styles */
+.about-hero {
+  width: 70%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.about-hero {
+	text-align:center;
+}
+
+.about-hero h3 {
+    color: white;
+    font-family: "open sans";
+    font-size: 28px;
+    font-weight: normal;
+    margin: 16px 0 80px;
+    line-height: normal;
+}
+
 /* Case Studies */
 article.case-study {
   margin: 40px 0 0;

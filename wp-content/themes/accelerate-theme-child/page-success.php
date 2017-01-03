@@ -18,8 +18,8 @@ get_header(); ?>
 		<div id="success-page" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<h2 id="centred">Thank you for your message!</h2>
-				<p class="centred">We will get back to you ASAP</p>
+				<h2>Thank you for your message!</h2>
+				<p>We will get back to you ASAP</p>
 
 				<?php the_content(); ?>
 			<?php endwhile; // end of the loop. ?>
