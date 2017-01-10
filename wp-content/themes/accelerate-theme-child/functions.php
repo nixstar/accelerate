@@ -24,7 +24,7 @@
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 1.0
  */
- 
+
  function create_custom_post_types() {
     register_post_type( 'case_studies',
         array(
@@ -35,6 +35,18 @@
             'public' => true,
             'has_archive' => true,
             'rewrite' => array( 'slug' => 'case-studies' ),
+        )
+    );
+
+    register_post_type( 'services',
+        array(
+            'labels' => array(
+                'name' => __( 'Services' ),
+                'singular_name' => __( 'Service' )
+            ),
+            'public' => true,
+            'has_archive' => false,
+            'rewrite' => array( 'slug' => 'services' ),
         )
     );
 }

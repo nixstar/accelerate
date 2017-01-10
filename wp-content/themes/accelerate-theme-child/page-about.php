@@ -33,28 +33,31 @@ get_header(); ?>
 	</div>
 
 	<div class="strategies">
-		<img src="content-strategy.png" alt="arrow icon">
-		<h2>Content Strategy</h2>
-		<p>Dolore consequat esse anim reprehenderit est aliqua anim cillum sit dolore. Ullamco mollit velit eu ad pariatur excepteur Lorem cupidatat duis velit veniam. Eiusmod proident reprehenderit velit id non voluptate sint in adipisicing dolore sunt cillum id.</p>
-	</div>
 
-	<div class="strategies-alt">
-		<img src="influencer-mapping.png" alt="atom icon">
-		<h2>Influencer Mapping</h2>
-		<p>Dolore consequat esse anim reprehenderit est aliqua anim cillum sit dolore. Ullamco mollit velit eu ad pariatur excepteur Lorem cupidatat duis velit veniam. Eiusmod proident reprehenderit velit id non voluptate sint in adipisicing dolore sunt cillum id.</p>
-	</div>
+		<?php query_posts('posts_per_page=4&post_type=services&order=ASC'); ?>
+			<?php while (have_posts()) : the_post();
 
-	<div class="strategies">
-		<img src="social-media-strategy.png" alt="thumbs-up icon">
-		<h2>Social Media Strategy</h2>
-		<p>Dolore consequat esse anim reprehenderit est aliqua anim cillum sit dolore. Ullamco mollit velit eu ad pariatur excepteur Lorem cupidatat duis velit veniam. Eiusmod proident reprehenderit velit id non voluptate sint in adipisicing dolore sunt cillum id.</p>
-	</div>
+				$icon = get_field("icon");
+				$size = "medium";
+			?>
 
-	<div class="strategies-alt">
-		<img src="design-development.png" alt="wand icon">
-		<h2>Design &amp Development</h2>
-		<p>Dolore consequat esse anim reprehenderit est aliqua anim cillum sit dolore. Ullamco mollit velit eu ad pariatur excepteur Lorem cupidatat duis velit veniam. Eiusmod proident reprehenderit velit id non voluptate sint in adipisicing dolore sunt cillum id.</p>
-	</div>
+				<figure class="icon-align-left">
+					<?php echo wp_get_attachment_image($icon, $size); ?>
+				</figure>
+
+				<?php if( get_field('icon_align') == 'right' ): ?>
+					<figure class="icon-align-right">
+						<?php echo wp_get_attachment_image($icon, $size); ?>
+					</figure>
+				<?php endif; ?>
+
+				<h2><?php the_title(); ?></h2>
+				<p><?php the_content(); ?></p>
+
+
+			<?php endwhile; ?>
+		<?php wp_reset_query(); ?>
+
 
 </section>
 
