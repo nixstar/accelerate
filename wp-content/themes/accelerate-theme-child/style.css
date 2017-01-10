@@ -92,6 +92,48 @@
     margin: 16px 0 80px;
     line-height: normal;
 }
+.about-page-content{
+  width: 80%;
+  margin: auto;
+}
+
+.about-page-content h2 {
+  clear: none;
+}
+
+.our-services {
+  text-align: center;
+}
+
+.our-services h4 {
+  text-transform: uppercase;
+}
+
+figure.services-icon {
+  float: left;
+  clear: both;
+  margin: 20px;
+}
+
+.services-desciption {
+  float: left;
+  height: 216px;
+  margin: 20px, 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+figure.services-icon-alt {
+  float: right;
+  clear: both;
+  margin: 20px;
+}
+
+.services-desciption-alt {
+  float: right;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 /* Case Studies */
 article.case-study {

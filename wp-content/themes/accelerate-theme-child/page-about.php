@@ -32,8 +32,6 @@ get_header(); ?>
 			Here's a brief overview of our offered services.</p>
 	</div>
 
-	<div class="strategies">
-
 		<?php query_posts('posts_per_page=4&post_type=services&order=ASC'); ?>
 			<?php while (have_posts()) : the_post();
 
@@ -41,23 +39,34 @@ get_header(); ?>
 				$size = "medium";
 			?>
 
-				<figure class="icon-align-left">
-					<?php echo wp_get_attachment_image($icon, $size); ?>
-				</figure>
+				<?php if( get_field('icon_align') == 'left' ): ?>
 
-				<?php if( get_field('icon_align') == 'right' ): ?>
-					<figure class="icon-align-right">
-						<?php echo wp_get_attachment_image($icon, $size); ?>
-					</figure>
+						<figure class="services-icon">
+							<?php echo wp_get_attachment_image($icon, $size); ?>
+						</figure>
+
+						<div class="services-description">
+							<h2><?php the_title(); ?></h2>
+							<p><?php the_content(); ?></p>
+						</div>
+
 				<?php endif; ?>
 
-				<h2><?php the_title(); ?></h2>
-				<p><?php the_content(); ?></p>
+				<?php if( get_field('icon_align') == 'right' ): ?>
+
+						<figure class="services-icon-alt">
+							<?php echo wp_get_attachment_image($icon, $size); ?>
+						</figure>
+
+						<div class="services-description-alt">
+							<h2><?php the_title(); ?></h2>
+							<p><?php the_content(); ?></p>
+						</div>
+				<?php endif; ?>
 
 
 			<?php endwhile; ?>
 		<?php wp_reset_query(); ?>
-
 
 </section>
 
