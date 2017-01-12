@@ -41,6 +41,8 @@ get_header(); ?>
 
 				<?php if( get_field('icon_align') == 'left' ): ?>
 
+					<div class="individual-service">
+
 						<figure class="services-icon">
 							<?php echo wp_get_attachment_image($icon, $size); ?>
 						</figure>
@@ -50,9 +52,12 @@ get_header(); ?>
 							<p><?php the_content(); ?></p>
 						</div>
 
+					</div>
 				<?php endif; ?>
 
 				<?php if( get_field('icon_align') == 'right' ): ?>
+
+					<div class="individual-service">
 
 						<figure class="services-icon-alt">
 							<?php echo wp_get_attachment_image($icon, $size); ?>
@@ -62,6 +67,8 @@ get_header(); ?>
 							<h2><?php the_title(); ?></h2>
 							<p><?php the_content(); ?></p>
 						</div>
+
+					</div>
 				<?php endif; ?>
 
 
@@ -72,7 +79,7 @@ get_header(); ?>
 
 <section class="work-with-us">
 	<div class="interested">
-	<h4>Interested in working with us?</h4>
+	<h2>Interested in working with us?</h2>
 	</div>
 
 	<div class="contact-us-btn">
